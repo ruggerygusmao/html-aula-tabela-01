@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Personalizada</title>
+
+    <style>
+
+        #linhaTitulo{
+            background-color:lightgreen;
+            font-size: 20px;
+        }
+        #tituloNacional{
+            background-color:cadetblue;
+        }
+
+        #linhaCabecalho{
+                background-color: silver;
+        }
+
+        .colunaValor{
+            text-align: end;
+        }
+        .colunaTempo{
+            text-align: center;
+
+        }
+
+        #valor{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+
+    <table border="1">
+            <tr id="linhaTitulo">
+                <th colspan="5">
+                Tabela de Serviços Mecânicos
+                </th>
+            </tr>
+
+            <tr id="linhaCabecalho">
+                <th id="tituloNacional" rowspan="5">Nacionais</th>
+                <th>Veículo</th>
+                <th>Serviço</th>
+                <th>Tempo previsto</th>
+                <th id="valor">Valor</th>
+            </tr>
+
+            <tr> 
+                <td>Caminhonete S10</td>
+                <td>Suspensão</td>
+                <td class="colunaTempo">3 horas e 25 minutos</td>
+                <td class="colunaValor"> 350, 00</td>   
+            </tr>
+
+            <tr>
+                <td>
+                    Caminhonete<br>
+                    Ranger
+                </td>
+                <td>Freio</td>
+                <td class="colunaTempo">3 horas e 45 minutos</td>
+                <td class="colunaValor"> 200,000</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Caminhonete <br>
+                    Hilux
+                </td>
+                <td>Troca de Bateria</td>
+                <td class="colunaTempo">30 minutos</td>
+                <td class="colunaValor"> 25,00</td>
+            </tr>
+
+            <tr>
+                <td>Caminhonete D10</td>
+                <td>Alinhamento</td>
+                <td class="colunaTempo">1 hora e 40 minutos</td>
+                <td class="colunaValor"> 220,00</td>
+            </tr>
+
+    </table>
+    
+</body>
+</html>
